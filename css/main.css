@@ -11,7 +11,9 @@
     .footer p, .contentIndex, .contentJuegos, .contentAdministrador{
         justify-content: center;
     }
-
+    .logo{
+        width: 5%;
+    }
     .contentIndex, .contentJuegos, .contentAdministrador{
         margin: auto;
         width: 85%;
