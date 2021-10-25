@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="nav">
+        <a id="btnMenu">Menu</a>
+        <ul class="itemsNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="administrador.html">Administrador</a></li>
+        </ul>
+    </div>
+    <div class="contentAdministrador">
+        <form class="formAdministrador">
+            <h1>Proximos torneos</h1>
+            <label for="inputFechaInicio">Fecha inicio:</label>
+            <input type="text" id="inputFechaInicio">
+            <label for="inputFechaFin">Fecha fin:</label>
+            <input type="text" id="inputFechaFin">
+            <label for="inputLocalidad">Localidad:</label>
+            <input type="text" id="inputLocalidad">
+            <input type="submit" id="btnEnviar">
+            <input value="Agregar 3" type="submit" id="btnAgregar3">
+            <input value="Borrar todo" type="submit" id="btnBorrarTodo">
+        </form>
+        
+        <div class="tablaAdministrador">
+            <h2>Proximos torneos:</h2>
+            <table>
+                <thead>
+                    <th>Fecha inicio</th>
+                    <th>Fecha fin</th>
+                    <th>Localidad</th>
+                </thead>
+                <tbody id="contenidoTabla">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>EVO 2021 ©</p>
+    </div>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/btnMenu.js"></script>
+</body>
+</html>
