@@ -1,0 +1,128 @@
+/* css general, funciona para todos los html*/
+@media  only screen and (min-width: 320px) {
+    .nav, .contentIndex, .footer, .contentJuegos, .contentAdministrador{
+        background-color: black;
+    }
+
+    .itemsNav, .contentIndex, .footer, .contentJuegos, .contentAdministrador, #btnMenu{
+        color: white;
+    }
+
+    .footer p, .contentIndex, .contentJuegos, .contentAdministrador{
+        justify-content: center;
+    }
+
+    .contentIndex, .contentJuegos, .contentAdministrador{
+        margin: auto;
+        width: 85%;
+    }
+
+    .itemsNav, #btnMenu{
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        height: 10%;
+    }
+
+    #btnMenu{
+        display: flex;
+    }
+
+    ul.itemsNav{
+        display: none;
+    }
+
+    ul.itemsNav.show{
+        display: flex;
+    }
+
+    ul li a{
+        text-decoration: none;
+    }
+
+    a:visited{
+        color:inherit;
+    }
+
+    body{
+        background-repeat: repeat;
+        background-image: url(../images/fondo_arcade.jpg);
+        margin:0;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer p{
+        display: flex;
+        margin:0;
+    }
+
+    /*css para index.html*/
+
+    .contentIndex{
+        text-align: center;
+    }
+
+    #imgEvoMain{
+        width: 70%;
+
+    }
+
+    .contentIndex h1{
+        margin-top: 0px;
+    }
+
+    /*css para juegos.html*/
+
+    .contentJuegos {
+        text-align: center;
+        
+    }
+
+    .imgJuego{
+        width: 50%;
+        height: 50%;
+    }
+
+    .contentJuegos h1{
+        margin-top: 0;
+    }
+
+    .listaJuegos{
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    /* css para administrador.html */
+
+
+    
+
+    .formAdministrador, .tablaAdministrador{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width: 50%;
+    }
+
+    th{
+        text-align: start;
+    }
+
+    .resaltado{
+        color: red;
+    }
+}
+@media  only screen and (min-width: 1024px){
+    #btnMenu{
+        display: none;
+    }
+    ul.itemsNav{
+        display: flex;
+    }
+}
