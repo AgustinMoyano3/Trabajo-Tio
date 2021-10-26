@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Juegos</title>
+
+    <title>Streeet</title>
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
         <img src="images/EVO_logo.png" class="logo">
@@ -23,34 +27,30 @@
           </li>
         </ul>
       </nav>
-    <div class="contentJuegos">
-        <h1>Lista de juegos en 2021</h1>
-        <ul class="listaJuegos">
-            <li>
-             <img class="imgJuego" src="images/tekken7.jpg" alt="tekken7">
-             
-            </li>
-            <button type="button" class="btn btn-success"><a href="dataGames.php?id=1">Info sobre: Tekker 7</a></button>
-            <hr>
-            <li>
-                <img class="imgJuego" src="images/street_fighter.jpg" alt="street_fighter">
-            </li>
-            <button type="button" class="btn btn-success"><a href="dataGames.php?id=2">Info sobre: Street Fighter</a></button>
-            <hr>
-            <li>
-                <img class="imgJuego" src="images/mk11.jpg" alt="mk11">
-            </li>
-            <button type="button" class="btn btn-success"><a href="dataGames.php?id=3">Info sobre: Mortal Kombat 11</a></button>
-            <hr>
-            <li>
-                <img class="imgJuego" src="images/guilty_gear.jpg" alt="guilty_guear">
-            </li>
-            <button type="button" class="btn btn-success"><a href="dataGames.php?id=4">Info sobre: Guilty Gear</a></button>
-        </ul>
+    <div class="main">
+        <div id="left">
+
+            <img src='images/tekken7.jpg' class="imgPort">
+
+        </div>
+        <div id="right">
+
+            <h2>Street Fight</h2><br>
+            <div>
+                <h3>Año de lanzamiento</h3>
+                <h3>2019</h3><br>
+                <h4>Desarrolladora<br>jueguitos</h4>
+                <h4>Informacion del juego<br>birbibiri</h4>
+            </div>
+            <button type="button" class="btn btn-primary"><a href="https://store.steampowered.com/app/389730/TEKKEN_7/" class="buy">Comprar</a></button>
+        </div>
+    </div>
+    <div id="vid">
+    <iframe width="500" height="150" src="https://www.youtube.com/embed/kKLCwDg2JLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="footer">
         <p>EVO 2021 ©</p>
     </div>
-    <script src="javascript/btnMenu.js"></script>
 </body>
+
 </html>
